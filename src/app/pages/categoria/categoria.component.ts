@@ -39,7 +39,7 @@ export class CategoriaComponent implements OnInit {
       img: 'https://tecnonacho.com/wp-content/uploads/2025/03/imagen_2025-03-05_104711709.png'
     },
     { 
-      id: 4, 
+      id: 5, 
       nombre: 'Monitor Samsung 27"', 
       precio: 349, 
       categoriaId: 1,
@@ -48,7 +48,7 @@ export class CategoriaComponent implements OnInit {
     },
 
     { 
-      id: 4, 
+      id: 6, 
       nombre: 'Monitor Samsung 27"', 
       precio: 349, 
       categoriaId: 1,
@@ -57,7 +57,7 @@ export class CategoriaComponent implements OnInit {
     },
 
     { 
-      id: 4, 
+      id: 7, 
       nombre: 'Monitor Samsung 27"', 
       precio: 349, 
       categoriaId: 1,
@@ -66,7 +66,7 @@ export class CategoriaComponent implements OnInit {
     },
 
     { 
-      id: 4, 
+      id: 8, 
       nombre: 'Monitor Samsung 27"', 
       precio: 349, 
       categoriaId: 1,
@@ -77,7 +77,7 @@ export class CategoriaComponent implements OnInit {
     
     // Categoría 2 - Smartphones
     { 
-      id: 5, 
+      id: 9, 
       nombre: 'Samsung Galaxy S23', 
       precio: 799, 
       categoriaId: 2,
@@ -85,7 +85,7 @@ export class CategoriaComponent implements OnInit {
     },
 
     { 
-      id: 6, 
+      id: 10, 
       nombre: 'Iphone 16 Pro Max', 
       precio: 799, 
       categoriaId: 2,
@@ -93,7 +93,7 @@ export class CategoriaComponent implements OnInit {
     },
 
     { 
-      id: 7, 
+      id: 11, 
       nombre: 'Xiaomi Redmi Note 14', 
       precio: 799, 
       categoriaId: 2,
@@ -101,7 +101,7 @@ export class CategoriaComponent implements OnInit {
     },
 
     { 
-      id: 8, 
+      id: 12, 
       nombre: 'Xiaomi Redmi Note 13', 
       precio: 799, 
       categoriaId: 2,
@@ -109,7 +109,7 @@ export class CategoriaComponent implements OnInit {
     },
 
     { 
-      id: 9, 
+      id: 13, 
       nombre: 'Motorola Moto G04s', 
       precio: 799, 
       categoriaId: 2,
@@ -117,43 +117,43 @@ export class CategoriaComponent implements OnInit {
     },
 
     { 
-      id: 5, 
-      nombre: 'Samsung Galaxy S23', 
+      id: 14, 
+      nombre: 'Poco X6 Pro 5G', 
       precio: 799, 
       categoriaId: 2,
-      img: 'https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&auto=format&fit=crop'
+      img: 'https://exitocol.vteximg.com.br/arquivos/ids/24432823/celular-poco-x6-pro-512gb-12-en-ram-gris.jpg?v=638609091934100000p'
     },
     
     { 
-      id: 5, 
-      nombre: 'Samsung Galaxy S23', 
+      id: 15, 
+      nombre: 'Xiaomi Redmi 14C', 
       precio: 799, 
       categoriaId: 2,
-      img: 'https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&auto=format&fit=crop'
+      img: 'https://compras.tigo.com.co/arquivos/ids/164532-1000-1000/Tigo-01.jpg?v=638659150566130000'
     },
 
     { 
-      id: 5, 
-      nombre: 'Samsung Galaxy S23', 
+      id: 16, 
+      nombre: 'Samsung Galaxy A05', 
       precio: 799, 
       categoriaId: 2,
-      img: 'https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&auto=format&fit=crop'
+      img: 'https://www.smartgadgets.com.co/cdn/shop/files/403.jpg?v=1734210956'
     },
 
     { 
-      id: 5, 
-      nombre: 'Samsung Galaxy S23', 
+      id: 17, 
+      nombre: 'Redmi Note 12 Pro+', 
       precio: 799, 
       categoriaId: 2,
-      img: 'https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&auto=format&fit=crop'
+      img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0_Ga84nk59BReaVQHjYBeT8MkA5nN0mdEQw&s'
     },
 
     { 
-      id: 5, 
-      nombre: 'Samsung Galaxy S23', 
+      id: 18, 
+      nombre: 'Iphone 14', 
       precio: 799, 
       categoriaId: 2,
-      img: 'https://images.unsplash.com/photo-1610945415295-d9bbf067e59c?w=400&auto=format&fit=crop'
+      img: 'https://itechcolombia.co/wp-content/uploads/2022/10/iphone-14-starlight-1__55760.png'
     },
     
     // Categoría 3 - PC y Laptops
