@@ -2,7 +2,7 @@
 .hero {
   position: relative;
   height: 55vh;
-  background: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVjbm9sb2dpYXxlbnwwfHwwfHx8MA%3D%3D') center/cover;
+  background: url('https://wallpapers.com/images/hd/1366x768-monitor-background-0hi7139sb3kh5ofx.jpg') center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,25 +195,29 @@
 }
 
 .precio {
-  color: #4f8ef7;
+  color: #030305;
   font-size: 1.2rem;
   font-weight: bold;
 }
 
 .btn-add {
-  margin-top: 10px;
-  padding: 10px;
-  background: #4f8ef7;
-  color: white;
-  border: none;
-  border-radius: 30px;
   width: 100%;
+  padding: 0.45rem;
+  background: #4f8ef7;
+  color: #ffffff;
+  border: 1.5px solid #4f8ef7;
+  border-radius: 6px;
   cursor: pointer;
-  transition: .3s;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin-top: 10px;
 }
 
-.btn-add:hover {
-  background: #3b6ccc;
+.btn-add :hover {
+  background: #4f8ef7;
+  color: #ffffff;
+  border-color: #4f8ef7;
 }
 
 /* ===== BENEFICIOS ===== */
@@ -281,4 +285,208 @@
   border-radius: 15px;
 }
 
+.cat-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
+.cat-slide {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cat-slide:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cat-slide:hover .cat-info h3 {
+  color: #007bff; /* o el color que prefieras */
+}
+
+/* ==== CATEGORÍAS GRANDES ==== */
+.categorias {
+  margin-top: 50px;
+  padding: 20px 0;
+}
+
+.categorias h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.slider-categorias {
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  padding: 10px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.slider-categorias::-webkit-scrollbar {
+  height: 8px;
+}
+
+.slider-categorias::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+  border-radius: 20px;
+}
+
+.slider-categorias::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* ==== ENLACE DE CATEGORÍA ==== */
+.cat-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  min-width: 450px;
+}
+
+/* ==== TARJETAS GRANDES ==== */
+.cat-slide {
+  width: 100%;
+  height: 170px;
+  background: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 25px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  scroll-snap-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.cat-slide:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 35px rgba(79, 142, 247, 0.25);
+}
+
+.cat-slide img {
+  width: 400px;
+  height: 130px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.cat-slide:hover img {
+  transform: scale(1.05);
+}
+
+.cat-info {
+  flex: 1;
+}
+
+.cat-info h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0;
+  color: #222;
+  transition: color 0.3s ease;
+}
+
+.cat-slide:hover .cat-info h3 {
+  color: #4f8ef7;
+}
+
+.cat-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-top: 8px;
+}
+
+/* Efecto de brillo al hover */
+.cat-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(79, 142, 247, 0.1), transparent);
+  transition: left 0.5s ease;
+  pointer-events: none;
+}
+
+.cat-slide:hover::before {
+  left: 100%;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .cat-link {
+    min-width: 350px;
+  }
+  
+  .cat-slide {
+    height: 150px;
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .cat-slide img {
+    width: 300px;
+    height: 110px;
+  }
+  
+  .cat-info h3 {
+    font-size: 1.3rem;
+  }
+  
+  .cat-info p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .cat-link {
+    min-width: 300px;
+  }
+  
+  .cat-slide {
+    height: 130px;
+    padding: 12px;
+    gap: 12px;
+  }
+  
+  .cat-slide img {
+    width: 250px;
+    height: 90px;
+  }
+  
+  .cat-info h3 {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+/* Botón de Ver Detalles */
+.btn-detalles {
+  width: 100%;
+  padding: 0.45rem;
+  background: #ffffff;
+  color: #1a1a1a;
+  border: 1.5px solid #4f8ef7;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+}
+
+.btn-detalles:hover {
+  background: #4f8ef7;
+  color: white;
+}

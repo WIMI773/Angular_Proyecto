@@ -1,0 +1,26 @@
+<div class="categoria-page container">
+  <!-- Encabezado -->
+  <div class="categoria-header">
+    <a routerLink="/" class="btn-volver">← </a>
+    <h1>{{ nombreCategoria }}</h1>
+  </div>
+
+  <!-- Grid de productos -->
+  <div class="productos-grid">
+    <div class="producto-card" *ngFor="let p of productos">
+      <img [src]="p.img" [alt]="p.nombre" />
+      <div class="producto-info">
+        <h3>{{ p.nombre }}</h3>
+        <p class="precio">${{ p.precio }}</p>
+        
+        <button class="btn-detalles">Ver más detalles</button>
+        <button class="btn-agregar">Agregar al carrito</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mensaje si no hay productos -->
+  <div class="sin-productos" *ngIf="productos.length === 0">
+    <p>No hay productos en esta categoría</p>
+  </div>
+</div>
